@@ -1,0 +1,38 @@
+#Confirm
+mutation confirmReservation($reservationId: Int!, $paymentId: String!, $razorpayOrderId : String!) {
+    confirmReservation(reservationId: $reservationId, paymentId: $paymentId, razorpayOrderId: $razorpayOrderId) {
+        results {
+            id
+            listId
+            hostId
+            guestId
+            checkIn
+            checkOut
+            guests
+            message
+            basePrice
+            cleaningPrice
+            currency
+            discount
+            discountType
+            guestServiceFee
+            hostServiceFee
+            total
+            confirmationCode
+            createdAt
+            reservationState
+            paymentState
+        }
+
+        status
+        errorMessage
+        razorpayOrderId
+        reservationId
+
+#        status
+#        errorMessage
+#        requireAdditionalAction
+#        paymentIntentSecret
+#        reservationId
+    }
+}

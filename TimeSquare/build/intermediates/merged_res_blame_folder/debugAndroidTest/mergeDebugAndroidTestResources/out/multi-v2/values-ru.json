@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.squareup.timessquare.test.TimeSquare-mergeDebugAndroidTestResources-1:/values-ru/values-ru.xml",
+            "map": [
+                {
+                    "source": "E:\\BACKUP 2025\\Download\\radicalstart_team-naman-shetty-rentall-startuppro-android-v3.7.3-77f9fbb555c4\\TimeSquare\\build\\intermediates\\packaged_res\\debug\\packageDebugResources\\values-ru\\values-ru.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "76",
+                        "endOffsets": "127"
+                    }
+                }
+            ]
+        }
+    ]
+}

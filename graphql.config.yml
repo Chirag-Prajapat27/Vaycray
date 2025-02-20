@@ -1,0 +1,10 @@
+schema: schema.graphql
+extensions:
+  endpoints:
+    Default GraphQL Endpoint:
+      url: https://www.vaycray.com/api/graphql    #Production BaseURL
+#      url: https://staging.vaycray.com/api/graphql  #Testin BaseURL
+#      url: https://a395-103-216-80-192.ngrok-free.app/graphql  #Testin BaseURL
+      headers:
+        user-agent: JS GraphQL
+      introspect: false

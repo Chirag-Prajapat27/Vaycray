@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "338729484479",
+    "project_id": "vaycray-a7115",
+    "storage_bucket": "vaycray-a7115.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338729484479:android:15f9e1aa47023dfb7b460a",
+        "android_client_info": {
+          "package_name": "com.halfeaten.vaycray"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338729484479-9k14feoaiofgh0e914459gulhstrc7ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1XUAChZ6Gw0ltKQFtLWO8g8y1XFBZE0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338729484479-41kra1069ljnn7a8bcbptsh9658dpque.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

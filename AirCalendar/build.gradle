@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.yongbeam'
+
+android {
+    signingConfigs {
+        release {
+            storePassword 'vaycray'
+            keyAlias 'vaycray'
+            keyPassword 'vaycray'
+            storeFile file('E:\\BACKUP 2025\\Download\\radicalstart_team-naman-shetty-rentall-startuppro-android-v3.7.3-77f9fbb555c4\\keystore\\keystore.jks')
+        }
+    }
+    compileSdkVersion 33
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError true
+    }
+    namespace 'com.yongbeom.aircalendar'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0-alpha05'
+    implementation 'joda-time:joda-time:2.10.1'
+    implementation 'androidx.preference:preference:1.2.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+}

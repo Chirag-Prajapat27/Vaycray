@@ -1,0 +1,10 @@
+#Thu Feb 20 14:29:08 IST 2025
+base.0=E\:\\BACKUP 2025\\Download\\radicalstart_team-naman-shetty-rentall-startuppro-android-v3.7.3-77f9fbb555c4\\TimeSquare\\build\\intermediates\\dex\\debugAndroidTest\\mergeLibDexDebugAndroidTest\\0\\classes.dex
+base.1=E\:\\BACKUP 2025\\Download\\radicalstart_team-naman-shetty-rentall-startuppro-android-v3.7.3-77f9fbb555c4\\TimeSquare\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.2=E\:\\BACKUP 2025\\Download\\radicalstart_team-naman-shetty-rentall-startuppro-android-v3.7.3-77f9fbb555c4\\TimeSquare\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\5\\classes.dex
+path.0=0/classes.dex
+path.1=0/classes.dex
+path.2=5/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.squareup.timessquare.test.TimeSquare-mergeDebugAndroidTestResources-1:/values/values.xml",
+            "map": [
+                {
+                    "source": "E:\\BACKUP 2025\\Download\\radicalstart_team-naman-shetty-rentall-startuppro-android-v3.7.3-77f9fbb555c4\\TimeSquare\\build\\intermediates\\packaged_res\\debug\\packageDebugResources\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,30,33,38,47,58",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,161,209,262,324,387,446,507,564,623,682,745,810,875,931,983,1034,1086,1134,1211,1267,1317,1653,1778,2007,2469,3066",
+                        "endLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,29,32,37,46,57,67",
+                        "endColumns": "60,47,52,61,62,58,60,56,58,58,62,64,64,55,51,50,51,47,76,55,49,10,10,10,10,22,22",
+                        "endOffsets": "156,204,257,319,382,441,502,559,618,677,740,805,870,926,978,1029,1081,1129,1206,1262,1312,1648,1773,2002,2464,3061,3615"
+                    }
+                }
+            ]
+        }
+    ]
+}

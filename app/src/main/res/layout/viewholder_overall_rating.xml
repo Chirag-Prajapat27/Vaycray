@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.halfeaten.vaycray.ui.profile.review.ReviewViewModel" />
+        <variable
+            name="title"
+            type="String" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_rating_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:id="@+id/tv_rating_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="@{title}"
+                android:fontFamily="@font/be_vietnampro_semibold"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/tv_item_listing_similar_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            rating_star="@{viewModel.userRating}"
+            viewmodel="@{viewModel}"
+            android:layout_below="@id/rel_rating_title"
+            android:layout_marginHorizontal="@dimen/text_small"
+            android:numStars="5"
+            android:rating="0"
+            android:scaleX="0.80"
+            android:scaleY="0.80"
+            android:layout_marginTop="10dp"
+            android:stepSize="1"
+            android:layout_marginStart="-10dp"
+            />
+
+
+    </RelativeLayout>
+</layout>
