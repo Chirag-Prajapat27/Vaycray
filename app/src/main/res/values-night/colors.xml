@@ -5,7 +5,8 @@
     <color name="colorAccent">#FF5483</color>
     <color name="ripple_white_grey">#7E7E7E</color>
     <color name="gray_light">#7E7E7E</color>
-    <color name="gray_light_profile">#0E142F</color>
+<!--    <color name="gray_light_profile">#0E142F</color>-->
+    <color name="gray_light_profile">#0A0A0A</color>  <!--Charcoal black-->
     <color name="shadow_color">#369F9F9F</color>
     <color name="gray_divider_light">#7E7E7E</color>
     <color name="icon_black">#BEBEBE</color>
@@ -40,12 +41,16 @@
     <color name="loader_color">#0E142F</color>
 
     <color name="status_bar_color">@color/colorPrimary</color>
-    <color name="white">#171D37</color>
+    <color name="white">#121212</color>
+<!--    <color name="white">#0A0A0A</color>-->  <!--Charcoal black-->
+<!--    <color name="white">#171D37</color>-->
     <color name="white_photo_story">@android:color/white</color>
-    <color name="bottom_nav_color">#171D37</color>
+<!--    <color name="bottom_nav_color">#171D37</color>-->
+    <color name="bottom_nav_color">#0A0A0A</color>  <!--Charcoal black-->
 
     <color name="black">#C7D8EB</color>
-    <color name="black_photo_story">#171D37</color>
+<!--    <color name="black_photo_story">#171D37</color>-->
+    <color name="black_photo_story">#0A0A0A</color>   <!--Charcoal black-->
     <color name="transparent">@android:color/transparent</color>
     <color name="search_divider_line">@color/ripple_white_grey</color>
     <color name="rausch_button_disabled_color">@color/c_rausch_button_disabled_color</color>
@@ -67,7 +72,8 @@
 
     // New colours
 
-    <color name="explore_header_bg">#0E142F</color>
+<!--    <color name="explore_header_bg">#0E142F</color>-->  <!--Charcoal black-->
+    <color name="explore_header_bg">#0A0A0A</color>
     <color name="listing_bottom_color">#504F53</color>
     <color name="edittext_color">#C2C2C2</color>
     <color name="bottom_navigation_text_color">#BEBEBE</color>

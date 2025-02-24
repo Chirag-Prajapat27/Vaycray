@@ -215,6 +215,9 @@
     <string name="disconnect">Disconnect</string>
     <string name="trust_verify">Fiducia e verifica</string>
 
+    <!--    Document Verification-->
+    <string name="document_header">Document</string>
+
 
     <string name="start_in">Iniziare</string>
     <string name="staying_for">Stare per</string>

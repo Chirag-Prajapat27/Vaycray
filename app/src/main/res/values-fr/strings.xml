@@ -220,6 +220,8 @@
     <string name="disconnect">Déconnecter</string>
     <string name="trust_verify">Confiance et vérification</string>
 
+    <!--    Document Verification-->
+    <string name="document_header">Document</string>
 
     <string name="start_in">Commencer dans</string>
     <string name="staying_for">Rester pour</string>

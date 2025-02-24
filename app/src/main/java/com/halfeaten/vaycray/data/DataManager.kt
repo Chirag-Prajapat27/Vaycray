@@ -32,7 +32,7 @@ interface DataManager: DbHelper, PreferencesHelper, ApiHelper {
             isEmailConfirmed: Boolean?,
             isIdVerification: Boolean?,
             isGoogleConnected: Boolean?,
-            isFacebookConnected: Boolean?
+            isFacebookConnected: Boolean?,
     )
 
     fun isUserLoggedIn(): Boolean

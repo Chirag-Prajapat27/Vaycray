@@ -131,6 +131,7 @@
     <string name="dates_not_available">תאריכים אלה אינם זמינים</string>
     <string name="you_don_t_have_any_listings">הם `לא צריך שום רשימות!</string>
     <string name="google_header">גוגל</string>
+    <string name="document_header">מִסְמָך</string>
     <string name="verification">אימות</string>
     <string name="read">קרא</string>
     <string name="uh_oh">או - או!</string>

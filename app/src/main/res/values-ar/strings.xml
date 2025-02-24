@@ -246,6 +246,9 @@
     <string name="disconnect">قطع الاتصال</string>
     <string name="trust_verify">الثقة والتأكيد</string>
 
+    <!--    Document Verification-->
+    <string name="document_header">وثيقة</string>
+
     <!--Cancellation-->
     <string name="start_in">تبدأ في</string>
     <string name="staying_for">البقاء ل</string>

@@ -686,6 +686,57 @@
                             </RelativeLayout>
 
                             <RelativeLayout
+                                android:id="@+id/rl_doc_verififed"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/bg_edit_text">
+
+                                <ImageView
+                                    android:id="@+id/iv_doc"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="15dp"
+                                    android:visibility="visible"
+                                    android:src="@drawable/ic_doc"
+                                    tools:ignore="ContentDescription" />
+                                <TextView
+                                    android:id="@+id/tv_doc_verified"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/document_header"
+                                    android:textSize="@dimen/text_size_h1_5"
+                                    android:layout_toEndOf="@id/iv_doc"
+                                    android:layout_centerVertical="true"
+                                    android:textDirection="locale"/>
+
+                                <ImageView
+                                    android:id="@+id/iv_info5"
+                                    android:layout_width="12dp"
+                                    android:layout_height="12dp"
+                                    android:layout_alignBottom="@id/tv_doc_verified"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:layout_toEndOf="@id/tv_doc_verified"
+                                    android:visibility="visible"
+                                    android:src="@drawable/ic_info"
+                                    tools:ignore="ContentDescription" />
+                                <TextView
+                                    android:id="@+id/iv_doc_verified"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:visibility="visible"
+                                    android:drawablePadding="5dp"
+                                    app:drawableEndCompat="@drawable/ic_right_arrow_blue_small"/>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
                                 android:id="@+id/rl_ph_verified"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"

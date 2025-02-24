@@ -222,6 +222,8 @@
     <string name="disconnect">Desconectar</string>
     <string name="trust_verify">Confianza y verificación</string>
 
+    <!--    Document Verification-->
+    <string name="document_header">Documento</string>
 
     <string name="start_in">Empezar en</string>
     <string name="staying_for">Quedándose para</string>

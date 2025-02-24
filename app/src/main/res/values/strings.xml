@@ -258,6 +258,10 @@
     <string name="disconnect">Disconnect</string>
     <string name="trust_verify">Trust and Verification</string>
 
+
+    <!--    Document Verification-->
+    <string name="document_header">Document</string>
+
     <!--Cancellation-->
     <string name="start_in">Trip starts in</string>
     <string name="staying_for">Staying for</string>
