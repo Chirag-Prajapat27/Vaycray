@@ -12,11 +12,11 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.RadioGroup
+import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
@@ -55,7 +55,6 @@ import com.skydoves.balloon.Balloon
 import com.skydoves.balloon.BalloonSizeSpec
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
-import devit951.github.magictip.tip.AutoCloseMagicTip
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import net.gotev.uploadservice.*
 import net.gotev.uploadservice.data.UploadInfo
@@ -244,6 +243,9 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
         mBinding.ivInfo4.setOnClickListener {
             showTooltip(it,getString(R.string.verify_phone))
         }
+        mBinding.ivInfo5.setOnClickListener {
+            showTooltip(it,getString(R.string.document_verification))
+        }
 
         mBinding.rlBirthday.onClick { openCalender() }
         mBinding.ivEmailVerified.onClick {
@@ -265,6 +267,10 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
             } else {
                 viewModel.socialLoginVerify("false","google")
             }
+        }
+
+        mBinding.ivDocVerified.onClick {
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(Constants.docVerification)))
         }
 
         mBinding.ivPhoneVerified.onClick {
@@ -300,15 +306,28 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
             mBinding.ivGoogleVerified.setTextColor(resources.getColor(R.color.colorPrimary))
             mBinding.ivGoogleVerified.setCompoundDrawablesRelativeWithIntrinsicBounds(null,null,AppCompatResources.getDrawable(this,R.drawable.ic_right_arrow_blue_small),null)
         }
+
         if (viewModel.dataManager.isPhoneVerified!!){
             mBinding.ivPhoneVerified.text=getString(R.string.disconnect)
             mBinding.ivPhoneVerified.setTextColor(resources.getColor(R.color.colorPrimary))
             mBinding.ivPhoneVerified.setCompoundDrawablesRelativeWithIntrinsicBounds(null,null,AppCompatResources.getDrawable(this,R.drawable.ic_tick),null)
-        }else{
+        } else{
             mBinding.ivPhoneVerified.text=getString(R.string.connect)
             mBinding.ivPhoneVerified.setTextColor(resources.getColor(R.color.colorPrimary))
             mBinding.ivPhoneVerified.setCompoundDrawablesRelativeWithIntrinsicBounds(null,null,AppCompatResources.getDrawable(this,R.drawable.ic_right_arrow_blue_small),null)
         }
+
+        if (viewModel.dataManager.isIdVerified!!){
+            mBinding.ivDocVerified.text = getString(R.string.disconnect)
+            mBinding.ivDocVerified.setTextColor(resources.getColor(R.color.colorPrimary))
+            mBinding.ivDocVerified.setCompoundDrawablesRelativeWithIntrinsicBounds(null,null,AppCompatResources.getDrawable(this,R.drawable.ic_tick),null)
+        } else{
+            mBinding.ivDocVerified.text = getString(R.string.connect)
+            mBinding.ivDocVerified.setTextColor(resources.getColor(R.color.colorPrimary))
+            mBinding.ivDocVerified.setCompoundDrawablesRelativeWithIntrinsicBounds(null,null,AppCompatResources.getDrawable(this,R.drawable.ic_right_arrow_blue_small),null)
+        }
+
+
         if (viewModel.dataManager.isEmailVerified!!) {
             mBinding.rlEmailVerified.isClickable = false
         }else {
@@ -328,6 +347,7 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
             mBinding.rlPhVerified.isClickable = true
         }
     }
+
     private fun initSocialLoginSdk() {
         mFbCallbackManager = CallbackManager.Factory.create()
         mGoogleSignInClient = GoogleSignIn.getClient(this, GoogleSignInOptions.Builder(
@@ -505,6 +525,7 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
         }
 
     }
+
     private fun showImagePicDialog() {
         val options = arrayOf("Camera", "Gallery")
         val builder = AlertDialog.Builder(this)
@@ -690,8 +711,6 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
         }
     }
 
-
-
     override fun openSplashScreen() {
         val intent = Intent(this, HomeActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
@@ -711,8 +730,6 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
     override fun moveToBackScreen() {
         onBackPressed()
     }
-
-
 
     override fun onRetry() {
 
@@ -734,8 +751,6 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
         if (isFromImagePicker.not()) {
             isFromImagePicker = false
         }
-
-
     }
 
     override fun showLayout() {
@@ -770,6 +785,7 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
         }
 
     }
+
     private fun vaildateData(account: GoogleSignInAccount?) {
         account?.let {
             if(!it.email.isNullOrEmpty()){
@@ -777,8 +793,8 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
                 onRetry()
             }
         }
-
     }
+
     private fun fbConnect() {
         mFbCallbackManager?.let {
             LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("email"))
@@ -816,6 +832,5 @@ class EditProfileActivity : BaseActivity<ActivityProfileBinding, EditProfileView
             mGoogleSignInClient?.signOut()
         }
     }
-
 
 }

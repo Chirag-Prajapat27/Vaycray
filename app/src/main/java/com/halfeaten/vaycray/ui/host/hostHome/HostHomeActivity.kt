@@ -1,6 +1,7 @@
 package com.halfeaten.vaycray.ui.host.hostHome
 
 import android.content.BroadcastReceiver
+import android.content.Intent
 import android.content.IntentFilter
 import android.content.SharedPreferences
 import android.net.ConnectivityManager
@@ -27,6 +28,7 @@ import com.halfeaten.vaycray.ui.host.hostInbox.HostInboxFragment
 import com.halfeaten.vaycray.ui.host.hostListing.HostListingFragment
 import com.halfeaten.vaycray.ui.host.hostReservation.HostTripsFragment
 import com.halfeaten.vaycray.ui.profile.ProfileFragment
+import com.halfeaten.vaycray.ui.profile.confirmPhonenumber.ConfirmPhnoActivity
 import com.halfeaten.vaycray.util.gone
 import com.halfeaten.vaycray.util.onClick
 import com.halfeaten.vaycray.util.visible
@@ -117,6 +119,11 @@ class HostHomeActivity : BaseActivity<ActivityHomeBinding, HomeViewModel>(), Hom
             }
         } catch (e: Exception) {
             e.printStackTrace()
+        }
+
+        if (viewModel.dataManager.isPhoneVerified == false && viewModel.loginStatus != 0) {
+            val intent = Intent(this, ConfirmPhnoActivity::class.java)
+            startActivityForResult(intent, 1)
         }
     }
 

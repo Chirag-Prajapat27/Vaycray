@@ -2,6 +2,7 @@ package com.halfeaten.vaycray.ui.home
 
 import android.Manifest
 import android.content.BroadcastReceiver
+import android.content.Intent
 import android.content.IntentFilter
 import android.content.SharedPreferences
 import android.net.ConnectivityManager
@@ -25,6 +26,7 @@ import com.halfeaten.vaycray.ui.base.BaseFragment
 import com.halfeaten.vaycray.ui.explore.ExploreFragment
 import com.halfeaten.vaycray.ui.inbox.InboxFragment
 import com.halfeaten.vaycray.ui.profile.ProfileFragment
+import com.halfeaten.vaycray.ui.profile.confirmPhonenumber.ConfirmPhnoActivity
 import com.halfeaten.vaycray.ui.profile.edit_profile.RC_LOCATION_PERM
 import com.halfeaten.vaycray.ui.saved.SavedFragment
 import com.halfeaten.vaycray.ui.trips.TripsFragment
@@ -123,6 +125,7 @@ class HomeActivity : BaseActivity<ActivityHomeBinding, HomeViewModel>(), HomeNav
 
     private fun initView() {
         topView = mBinding.root
+
         askPermssion()
         setUpBottomNavigation()
         validateIntent()
@@ -133,6 +136,10 @@ class HomeActivity : BaseActivity<ActivityHomeBinding, HomeViewModel>(), HomeNav
             }
         }
         viewModel.dataManager.isHostOrGuest = false
+        if (viewModel.dataManager.isPhoneVerified == false && viewModel.loginStatus != 0) {
+            val intent = Intent(this, ConfirmPhnoActivity::class.java)
+            startActivityForResult(intent, 1)
+        }
     }
 
     private fun validateIntent() {

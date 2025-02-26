@@ -114,6 +114,8 @@
     <string name="facebook_connected">Facebook Collegata</string>
     <string name="phone_verified">Telefono verificato</string>
     <string name="verify_phone">Verifica il numero di telefono</string>
+    <string name="uploadDocument">Carica documento</string>
+
 
     <string name="confirm_email">Conferma email</string>
     <string name="connect_google">Connetti Google</string>

@@ -118,6 +118,7 @@
     <string name="facebook_connected">Facebook Connecté</string>
     <string name="phone_verified">Téléphone vérifié</string>
     <string name="verify_phone">Vérifier le numéro de téléphone</string>
+    <string name="uploadDocument">Télécharger le document</string>
 
     <string name="confirm_email">Confirmez votre e-mail</string>
     <string name="connect_google">Connecter Google</string>

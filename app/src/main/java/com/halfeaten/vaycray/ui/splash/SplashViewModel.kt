@@ -1,6 +1,7 @@
 package com.halfeaten.vaycray.ui.splash
 
 import android.content.Intent
+import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.databinding.ObservableField
 import androidx.lifecycle.MutableLiveData
 import com.halfeaten.vaycray.BuildConfig
@@ -10,6 +11,8 @@ import com.halfeaten.vaycray.GetVersionQuery
 import com.halfeaten.vaycray.R
 import com.halfeaten.vaycray.data.DataManager
 import com.halfeaten.vaycray.ui.base.BaseViewModel
+import com.halfeaten.vaycray.ui.profile.confirmPhonenumber.ConfirmPhnoActivity
+import com.halfeaten.vaycray.ui.profile.edit_profile.REQUEST_CODE
 import com.halfeaten.vaycray.util.performOnBackOutOnMain
 import com.halfeaten.vaycray.util.resource.ResourceProvider
 import com.halfeaten.vaycray.util.rx.Scheduler

@@ -39,6 +39,7 @@ var stripePublishableKey="YOUR_STRIPE_KEY"
     const val banner = "$WEBSITE/images/banner/"
     const val amenities = "$WEBSITE/images/amenities/"
     const val amenities_constant = "$WEBSITE/images/amenities"
+    const val docVerification = "$WEBSITE/document-verification"
 
     const val shareUrl = "$WEBSITE/rooms/"
 

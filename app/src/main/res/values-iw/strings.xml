@@ -491,6 +491,7 @@
     <string name="code">94101.0</string>
     <string name="please_enter_the_state">הזן את המדינה</string>
     <string name="verify_phone">אימות טלפון</string>
+    <string name="uploadDocument">העלה מסמך</string>
     <string name="delete">מחק</string>
     <string name="copied_to_clipboard">העתק ללוח</string>
     <string name="total">סְכוּם</string>

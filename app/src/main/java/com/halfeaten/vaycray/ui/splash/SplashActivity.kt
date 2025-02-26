@@ -21,6 +21,7 @@ import com.halfeaten.vaycray.ui.base.BaseActivity
 import com.halfeaten.vaycray.ui.home.HomeActivity
 import com.halfeaten.vaycray.ui.host.HostFinalActivity
 import com.halfeaten.vaycray.ui.host.hostHome.HostHomeActivity
+import com.halfeaten.vaycray.ui.profile.confirmPhonenumber.ConfirmPhnoActivity
 import com.halfeaten.vaycray.ui.profile.manageAccount.ForceUpdateDialog
 import com.halfeaten.vaycray.vo.InboxMsgInitData
 import org.json.JSONObject

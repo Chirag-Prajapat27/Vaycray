@@ -128,6 +128,7 @@
     <string name="phone_verified">هاتف التحقق</string>
     <string name="verified">تم التحقق</string>
     <string name="verify_phone">التحقق من رقم الهاتف</string>
+    <string name="uploadDocument">تحميل المستند</string>
 
 
     <string name="about">حول</string>
